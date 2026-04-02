@@ -1,6 +1,6 @@
-# 🔌 Power Plant Energy Prediction using ANN (PyTorch)
+# Power Plant Energy Prediction using ANN (PyTorch)
 
-## 📌 Project Overview
+## Project Overview
 
 This project implements an **Artificial Neural Network (ANN)** using **PyTorch** to predict the electrical energy output (PE) of a power plant using environmental variables.
 
@@ -69,12 +69,7 @@ Target:
 
 ## Architecture Diagram
 
-```mermaid
-graph TD
-    A[Input Layer (4 neurons)] --> B[Hidden Layer 1 (6 neurons + ReLU)]
-    B --> C[Hidden Layer 2 (6 neurons + ReLU)]
-    C --> D[Output Layer (1 neuron)]
-```
+![Diagram](./diagram/reg_model_diagram.png)
 
 ---
 
