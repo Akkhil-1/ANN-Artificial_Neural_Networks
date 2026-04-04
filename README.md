@@ -26,11 +26,21 @@ Target:
 
 ## ⚙️ Workflow
 
-* Data loading using pandas
-* Train-test split (80/20)
-* Feature scaling (StandardScaler)
-* Tensor conversion
-* DataLoader creation (batch size = 32)
+1. Data Loading & Exploration
+Dataset is loaded using pandas and basic checks are performed to understand structure and detect missing values.
+Helps ensure data quality before feeding into the model.
+2. Train-Test Split
+Dataset is divided into training (80%) and testing (20%) sets.
+This allows evaluation of model performance on unseen data.
+3. Feature Scaling
+Features are standardized using StandardScaler.
+Ensures all inputs are on the same scale, improving model convergence.
+4. Tensor Conversion
+Data is converted from NumPy arrays to PyTorch tensors.
+Required because PyTorch models operate on tensor data.
+5. DataLoader Creation
+Data is wrapped into TensorDataset and loaded using DataLoader.
+Enables efficient mini-batch training and shuffling of data.
 
 ---
 
@@ -60,11 +70,24 @@ Target:
 
 ## Training Process
 
-* Forward pass
-* Loss computation
-* Backpropagation
-* Weight update
-* Validation after each epoch
+1. Forward Pass
+Input data is passed through the neural network to generate predictions.
+This step computes outputs based on current weights.
+2. Loss Computation
+The difference between predicted and actual values is measured using MSE.
+Provides a signal of how well the model is performing.
+3. Backpropagation
+Gradients of the loss are computed with respect to model parameters.
+This helps determine how weights should be updated.
+4. Optimization Step
+Optimizer (Adam) updates weights using computed gradients.
+Gradually reduces the loss over epochs.
+5. Gradient Reset
+Gradients are cleared using zero_grad() to prevent accumulation.
+Necessary for correct gradient computation in the next iteration.
+6. Validation
+Model is evaluated on test data after each epoch.
+Helps monitor overfitting and generalization.
 
 ---
 
