@@ -34,7 +34,7 @@ Target:
 
 ---
 
-## 🧠 ANN Architecture
+## ANN Architecture
 
 * Input: 4 neurons
 * Hidden Layer 1: 6 neurons + ReLU
@@ -43,13 +43,13 @@ Target:
 
 ---
 
-## 🖼️ Architecture Diagram
+## Architecture Diagram
 
 ![Diagram](./diagram/reg_model_diagram.png)
 
 ---
 
-## 🔧 Training Details
+## Training Details
 
 * Loss Function: **MSELoss**
 * Optimizer: Adam
@@ -58,7 +58,7 @@ Target:
 
 ---
 
-## 🔄 Training Process
+## Training Process
 
 * Forward pass
 * Loss computation
@@ -68,7 +68,7 @@ Target:
 
 ---
 
-## 📉 Evaluation
+## Evaluation
 
 * Mean Squared Error (MSE)
 * R² Score
@@ -103,7 +103,7 @@ Target:
 
 ---
 
-## 🧠 ANN Architecture
+## ANN Architecture
 
 * Input Layer: **34 neurons**
 * Hidden Layer 1: **64 neurons + ReLU**
@@ -112,13 +112,13 @@ Target:
 
 ---
 
-## 🖼️ Architecture Diagram
+## Architecture Diagram
 
 ![Diagram](./diagram/clf_model_diagram.png)
 
 ---
 
-## 🔧 Training Details
+## Training Details
 
 * Loss Function: **CrossEntropyLoss**
 * Optimizer: Adam
@@ -127,7 +127,7 @@ Target:
 
 ---
 
-## 🔄 Training Process
+## Training Process
 
 For each epoch:
 
@@ -140,7 +140,7 @@ For each epoch:
 
 ---
 
-## 📉 Evaluation
+## Evaluation
 
 ### Classification Metrics:
 
@@ -166,7 +166,7 @@ For each epoch:
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 * Python
 * PyTorch
